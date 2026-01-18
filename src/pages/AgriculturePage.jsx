@@ -56,14 +56,14 @@ const HeroSection = () => {
         </p>
         
         <div className={`flex flex-col sm:flex-row gap-4 justify-center items-center mb-10 transition-all duration-700 delay-300 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <Link to="/contact" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#2D5A3D] text-white rounded-full font-medium hover:bg-[#234A31] transition-all duration-300 group shadow-lg shadow-[#2D5A3D]/20 hover:shadow-xl hover:shadow-[#2D5A3D]/30">
+          <a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#2D5A3D] text-white rounded-full font-medium hover:bg-[#234A31] transition-all duration-300 group shadow-lg shadow-[#2D5A3D]/20 hover:shadow-xl hover:shadow-[#2D5A3D]/30 cursor-pointer">
             <span>Book Consultation</span>
             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />
-          </Link>
-          <Link to="/services" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-700 rounded-full font-medium border border-gray-200/80 hover:bg-white hover:border-gray-300 transition-all duration-300 group">
+          </a>
+          <a href="#solutions" onClick={(e) => { e.preventDefault(); document.getElementById('solutions')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-700 rounded-full font-medium border border-gray-200/80 hover:bg-white hover:border-gray-300 transition-all duration-300 group cursor-pointer">
             <Play className="w-5 h-5 text-[#2D5A3D]" />
             <span>Explore Solutions</span>
-          </Link>
+          </a>
         </div>
         
         <p className={`text-sm text-gray-400 transition-all duration-700 delay-400 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
@@ -289,10 +289,10 @@ const TransformationSection = () => {
               ))}
             </div>
             
-            <Link to="/contact" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gradient-to-r from-[#E07B00] to-[#F59E0B] text-white rounded-full font-medium hover:shadow-lg hover:shadow-[#E07B00]/30 transition-all duration-300 group btn-ripple">
+            <a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gradient-to-r from-[#E07B00] to-[#F59E0B] text-white rounded-full font-medium hover:shadow-lg hover:shadow-[#E07B00]/30 transition-all duration-300 group btn-ripple cursor-pointer">
               <span>Book Consultation for ₹250</span>
               <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />
-            </Link>
+            </a>
           </div>
 
           {/* Right Video with enhanced effects */}
@@ -653,10 +653,10 @@ const CTASection = () => {
             ))}
           </div>
           
-          <Link to="/contact" className="inline-flex items-center justify-center gap-3 px-10 py-4 bg-gradient-to-r from-[#E07B00] to-[#F59E0B] text-white rounded-full font-medium hover:shadow-xl hover:shadow-[#E07B00]/30 transition-all duration-300 group btn-ripple transform hover:scale-105">
+          <a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="inline-flex items-center justify-center gap-3 px-10 py-4 bg-gradient-to-r from-[#E07B00] to-[#F59E0B] text-white rounded-full font-medium hover:shadow-xl hover:shadow-[#E07B00]/30 transition-all duration-300 group btn-ripple transform hover:scale-105 cursor-pointer">
             <span>Book Now</span>
             <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />
-          </Link>
+          </a>
         </div>
       </div>
     </section>
