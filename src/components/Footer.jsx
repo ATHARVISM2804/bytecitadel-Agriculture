@@ -25,12 +25,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2.5 mb-4">
-              <div className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center">
-                <Leaf className="w-5 h-5 text-white" />
-              </div>
+            <Link to="/" className="flex items-center gap-3 mb-4">
+              <img 
+                src="https://res.cloudinary.com/dmhabztbf/image/upload/v1768294579/ac82306d-f412-4b17-925f-a921dee6de02-md_brnohf.jpg" 
+                alt="ByteCitadel Logo" 
+                className="w-9 h-9 rounded-lg object-cover"
+              />
+              <div className="w-0.5 h-6 bg-white/30 rounded-full"></div>
               <span className="text-lg font-bold tracking-tight">
-                Byte<span className="text-[#7cb88a]">Citadel</span>
+                bytecitadel
               </span>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-5">

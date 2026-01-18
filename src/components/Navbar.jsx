@@ -91,18 +91,15 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-18 lg:h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#2D5A3D] to-[#E07B00] rounded-xl blur-lg opacity-40 group-hover:opacity-60 transition-opacity duration-500" />
-                <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-[#2D5A3D] via-[#3d7a52] to-[#2D5A3D] flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                  <Leaf className="w-5 h-5 text-white drop-shadow-sm" />
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold text-gray-900 tracking-tight leading-none">
-                  Byte<span className="bg-gradient-to-r from-[#2D5A3D] to-[#3d7a52] bg-clip-text text-transparent">Citadel</span>
-                </span>
-                <span className="text-[10px] font-medium text-gray-400 tracking-wider uppercase">AgriTech IoT</span>
-              </div>
+              <img 
+                src="https://res.cloudinary.com/dmhabztbf/image/upload/v1768294579/ac82306d-f412-4b17-925f-a921dee6de02-md_brnohf.jpg" 
+                alt="ByteCitadel Logo" 
+                className="w-10 h-10 rounded-xl object-cover shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
+              />
+              <div className="w-0.5 h-7 bg-gray-300 rounded-full"></div>
+              <span className="text-xl font-bold text-gray-900 tracking-tight group-hover:text-[#2D5A3D] transition-colors duration-300">
+                bytecitadel pvt. ltd
+              </span>
             </Link>
 
             {/* Desktop Navigation */}
