@@ -113,8 +113,7 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-white/50">
             <span>© {currentYear} ByteCitadel Agriculture. All rights reserved.</span>
             <div className="flex items-center gap-4">
-              <Link to="/privacy" className="hover:text-white/70 transition-colors">Privacy</Link>
-              <Link to="/terms" className="hover:text-white/70 transition-colors">Terms</Link>
+            
             </div>
           </div>
         </div>
